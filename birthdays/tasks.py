@@ -12,7 +12,7 @@ logger = get_task_logger(__name__)
 
 
 @periodic_task(
-    run_every=(crontab(day='*/1')),
+    run_every=(crontab(minute=0, hour=12)),
     name="task_notify_about_birthday"
 )
 def task_notify_about_birthday():
