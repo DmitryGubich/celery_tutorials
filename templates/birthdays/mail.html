@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div>
+        <div class="card" style="width: 18rem;margin: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Reminder about birthday!</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ birth_date }}</h6>
+                <p class="card-text">Tomorrow {{ first_name|title }} {{ last_name|title }}
+                    celebrates his/her birthday.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
